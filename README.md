@@ -42,6 +42,6 @@
 
 | 날짜        | 주제                  | 발표자        | 링크                        |
 |------------|----------------------|--------------|----------------------------|
-| YYYY.MN.DD | SAMPLE SAMPLE SAMPLE | @chaerin-dev |[SAMPLE_SAMPLE_SAMPLE](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/MMDD_SAMPLE_SAMPLE_SAMPLE)|
+| YYYY.MN.DD | SAMPLE SAMPLE SAMPLE | @chaerin-dev |[MMDD_SAMPLE_SAMPLE_SAMPLE.md](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/MMDD_SAMPLE_SAMPLE_SAMPLE.md)|
 
 
