@@ -15,15 +15,21 @@ def get_file_list():
 def extract_metadata_from_md(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
-    # 발표자: [이름 (@아이디)](링크)
-    presenter_match = re.search(r"\|\s*\[([^\]]+)\]\([^)]+\)\s*\|", content)
-    presenter = presenter_match.group(1) if presenter_match else "@unknown"
-    # 날짜: 두 번째 열의 값 (20250509 같은 형식)
+    # 발표자 추출: [이름 (@아이디)](링크)
+    presenter_match = re.search(r"\|\s*\[([^\[]+? \(@[^\)]+\))\]\((https://github\.com/[^)]+)\)\s*\|", content)
+    if presenter_match:
+        presenter_text = presenter_match.group(1)  # 김채린 (@chaerin-dev)
+        presenter_link = presenter_match.group(2)  # https://github.com/chaerin-dev
+        presenter = f"[{presenter_text}]({presenter_link})"
+    else:
+        presenter = "@unknown"
+    # 날짜 추출
     date_match = re.search(r"\|\s*\[.*?\]\(.*?\)\s*\|\s*(\d{8})\s*\|", content)
     raw_date = date_match.group(1) if date_match else "00000000"
-    # 날짜를 YYYY.MM.DD 형식으로 변환
     date = f"{raw_date[:4]}.{raw_date[4:6]}.{raw_date[6:]}" if raw_date != "00000000" else "YYYY.MM.DD"
+
     return presenter, date
+
 
 
 def make_info(file_list):
@@ -31,7 +37,7 @@ def make_info(file_list):
     for file in file_list:
         filepath = os.path.join("./2025", file)
         presenter, date = extract_metadata_from_md(filepath)
-        row = f"| {date} | {presenter} |[**{file}**](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/{file})|\n"
+        row = f"| {date} | {presenter} |[{file}](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/{file})|\n"
         rows += row
     return rows
 
@@ -77,7 +83,7 @@ def make_read_me(table_rows, total_file_cnt):
 <br />
 <br />
 
-## 📅 진행 현황 (총 {total_file_cnt}개)
+## 📅 진행 현황 (총 {total_file_cnt}회)
 
 | 날짜        | 발표자        | 링크                        |
 |-------------|----------------|-----------------------------|
