@@ -38,9 +38,9 @@
 <br />
 <br />
 
-## 📅 진행 현황 (총 1개)
+## 📅 진행 현황 (총 1회)
 
 | 날짜        | 발표자        | 링크                        |
 |-------------|----------------|-----------------------------|
-| 2025.05.09 | 김채린 (@chaerin-dev) |[**0509.md**](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/0509.md)|
+| 2025.05.09 | [김채린 (@chaerin-dev)](https://github.com/chaerin-dev) |[0509.md](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/0509.md)|
 
