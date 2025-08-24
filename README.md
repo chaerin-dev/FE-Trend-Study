@@ -12,6 +12,7 @@
 - [김채린 (@chaerin-dev)](https://github.com/chaerin-dev)
 - [박윤하 (@GuRaBang)](https://github.com/GuRaBang)
 - [손재영 (@pereng11)](https://github.com/pereng11)
+- [홍승혁 (@hongddoni)](https://github.com/hongddoni)
 - ...?
 
 <br />
