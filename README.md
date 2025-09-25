@@ -39,7 +39,7 @@
 <br />
 <br />
 
-## 📅 진행 현황 (총 13회)
+## 📅 진행 현황 (총 14회)
 
 | 날짜        | 발표자        | 링크                        |
 |-------------|----------------|-----------------------------|
@@ -56,4 +56,5 @@
 | 2025.08.08 | [손재영 (@pereng11)](https://github.com/pereng11) |[0808.md](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/0808.md)|
 | 2025.08.13 | [김채린 (@chaerin-dev)](https://github.com/chaerin-dev) |[0813.md](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/0813.md)|
 | 2025.09.05 | [손재영 (@pereng11)](https://github.com/pereng11) |[0905.md](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/0905.md)|
+| 2025.09.12 | [김채린 (@chaerin-dev)](https://github.com/chaerin-dev) |[0912.md](https://github.com/chaerin-dev/FE-Trend-Study/blob/main/2025/0912.md)|
 
